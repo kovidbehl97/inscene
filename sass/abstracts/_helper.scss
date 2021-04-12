@@ -1,0 +1,106 @@
+.fwn {
+    font-weight: normal;
+}
+.f700{
+    font-weight: 700;
+}
+.flex {
+    display: flex;
+}
+.block{
+    display: block;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.fdc {
+    flex-direction: column;
+}
+.aifs{
+    align-items: flex-start;
+}
+.asfs{
+    align-self:flex-start ;
+}
+.aic {
+    align-items: center;
+}
+.jcc {
+    justify-content: center;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.jcfe {
+    justify-content: flex-end;
+}
+.fc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fauto {
+    flex: auto;
+}
+.f1 {
+    flex: 1;
+}
+.f100 {
+    flex-basis: 100%;
+}
+.w100{
+    width: 100%;
+}
+.tc {
+    text-align: center;
+}
+.spacing {
+    margin: 5rem 0;
+    &-mb0{
+        margin-bottom: 0;
+    }
+    &-mt0{
+        margin-top: 0;
+    }
+}
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.pr {
+    position: relative;
+}
+.m0 {
+    margin: 0;
+}
+.mb0_2_5 {
+    margin-bottom: 0.25rem;
+}
+.mb0_5 {
+    margin-bottom: 0.5rem;
+}
+.mb1 {
+    margin-bottom: 1rem;
+}
+.mb1_5 {
+    margin-bottom: 1.5rem;
+}
+.mb2 {
+    margin-bottom: 2rem;
+}
+.mb2_5 {
+    margin-bottom: 2.5rem;
+}
+.mb3 {
+    margin-bottom: 3rem;
+}
+.mb4 {
+    margin-bottom: 4rem;
+}
+.mb5 {
+    margin-bottom: 5rem;
+}
+.hidden {
+    display: none;
+}

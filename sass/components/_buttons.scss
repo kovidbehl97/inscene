@@ -1,0 +1,20 @@
+.btn{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    border: 2px solid $primaryThemeText;
+    padding: 5px 10px;
+    color: $primaryThemeText;
+    border-radius: 3px;
+}
+.btn-radius{
+    border-radius: 25px;
+}
+.btn-primary{
+    background-color: $primaryTheme;
+    border-color: $primaryTheme;
+    color: $primaryThemeText;
+}
+

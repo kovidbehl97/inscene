@@ -1,0 +1,90 @@
+
+.contactus {
+    padding: 4rem 2rem;
+    background: url("/assets/images/inscene_4.png") no-repeat center;
+    background-size: cover;
+    height: calc(100vh - 123px);
+    &_container{
+        padding-left: 12rem;
+        padding-right: 4rem;
+    }
+    &_t {
+        flex: auto;
+        max-width: 60%;
+        &::after{
+            content: '';
+            margin: auto;
+            margin-top: 30px;
+            width: 15rem;
+            height: 0.3rem;
+            background-color: $white;
+            display: block;
+        }
+        &-h4{
+            color: $white;
+        }
+        &-p {
+            color: $white;
+        }
+        &-p {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+    }
+    &_l{
+        padding: 3rem 0 4rem 0;
+        &-heading{
+            color: $white;
+        }
+        &-contact{
+            color:$white;
+            font-size: clamp(1rem, 1.2vw, 1.1rem);
+        }
+        &-i{
+            &-icon{
+                width: 30px;
+                height: 30px;
+                fill: $white;
+                &.icon-phone{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            &-text{
+                color: $white;
+                line-height: 1;
+                margin-left: 8px;
+                font-size: clamp(0.7rem, 1vw, 1rem);
+            }
+        }
+    }
+    &_r {
+        flex: auto;
+        max-width: 40%;
+        padding: 3rem 2.5rem;
+        border-radius: 40px;
+        &-lb{
+            color: $white;
+        }
+        &-in,
+        &-t {
+            padding: 10px;
+            margin: 6px 0 16px;
+        }
+        &-t {
+            min-height: 50px;
+        }
+        &-s-btn{
+            margin-top: 6px;
+            color: $darkYellow;
+            border-color: $darkYellow;
+            padding: 10px 38px;
+            &:hover,
+            &:active{
+                background-color: $darkYellow;
+                color: $white;
+            }
+        }
+    }
+}
+

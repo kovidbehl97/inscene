@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <header class="flex aic jcsb header">
+        <div class="header_logo">
+            <img class="header_logo-img" src="assets/images/Inscene-Logo.png" alt="Inscene-Logo">
+        </div>
+        <nav class="f1 header_n">
+            <ul class="flex jcfe header_n_u">
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/">Home</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/solutions">Solutions</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/demo.html">Demos</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/use-cases">Use Cases</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="demo_main">
+        <div class="container demo_container flex jcsb">
+            <aside class="demo_aside aside f1">
+                <ul class="aside_ul">
+                    <li class="aside_ul_l dropdown">
+                        IMAGE FEATURES
+                        <svg class="aside_ul_l-svg">
+                            <use xlink:href="assets/icons/icons.svg#arrows"></use>
+                        </svg>
+                        <ul class="aside_ul ddmenu">
+                            <li class="aside_ul_l">
+                                Classification
+                            </li>
+                            <li class="aside_ul_l">
+                                Object Detection
+                            </li>
+                            <li class="aside_ul_l">
+                                Shot Size
+                            </li>
+                            <li class="aside_ul_l">
+                                Shot Angle
+                            </li>
+                            <li class="aside_ul_l">
+                                Image Style
+                            </li>
+                            <li class="aside_ul_l">
+                                Dominant Colors
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside_ul_l dropdown icon-arrow">
+                        IMAGE QUALITY
+                        <svg class="aside_ul_l-svg">
+                            <use xlink:href="assets/icons/icons.svg#arrows"></use>
+                        </svg>
+                        <ul class="aside_ul ddmenu">
+                            <li class="aside_ul_l">
+                                Classification
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside_ul_l dropdown icon-arrow">
+                        IMAGE TO TEXT
+                        <ul class="aside_ul ddmenu">
+                            <li class="aside_ul_l">
+                                Caption
+                            </li>
+                            <li class="aside_ul_l">
+                                Description
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside_ul_l dropdown icon-arrow">
+                        IMAGE SEARCH
+                        <ul class="aside_ul ddmenu">
+                            <li class="aside_ul_l">
+                                Image Match
+                            </li>
+                            <li class="aside_ul_l">
+                                Visually Similar
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="aside_ul_l dropdown">
+                        OCR
+                        <ul class="aside_ul ddmenu">
+                            <li class="aside_ul_l">
+                                Image Match
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="demo_try tryDemo f1">
+                <!--Classificaton Tab Content-->
+                <div class="flex wrap jcsb tryDemo_cls">
+                    <div class="tryDemo_cls_l tryDemo_left mb1 asfs">
+                        <div class="tryDemo_slider ">
+                            <img class="tryDemo-img" src="assets/images/sample_29.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="flex wrap tryDemo_cls_r tryDemo_right mb1 asfs">
+                        <input class="hidden tryDemo_tabs-subInput" id="tab1" type="radio" name="cls-k" checked="">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tryDemo_tabs-kp tc" for="tab1">Key Points</label>
+                        <input class="hidden tryDemo_tabs-subInput tryDemo_tabs-jr  " id="tab2" type="radio" name="cls-k">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tc br" for="tab2">JSON Response</label>
+                        <div class="tryDemo_f100 mb1">
+                            <div class="flex jcsb mb2">
+                                <h6 class="f700">Predicted Label</h6>
+                                <a class="tryDemo_oldVersion" href="#">Old Version</a>
+                            </div>
+                            <div class="flex fdc mb1">
+                                <div class="flex ac jcsb mb0_5">
+                                    <p class="m0 f700 small-f">Interior</p>
+                                    <p class="m0 f700 small-f">95%</p>
+                                </div>
+                                <div class="tryDemo_progress">
+                                    <div class="tryDemo_progress-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex fdc mb1_5">
+                                <div class="flex ac jcsb mb0_5">
+                                    <p class="m0 f700 small-f">Bathroom</p>
+                                    <p class="m0 f700 small-f">95%</p>
+                                </div>
+                                <div class="tryDemo_progress">
+                                    <div class="tryDemo_progress-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <h6 class="mb1 f700">Other Key Points</h6>
+                            <ul class="tryDemo_ul">
+                                <li class="flex ac tryDemo_ul_l">
+                                    <span class="tryDemo_ul_l-s">Width:</span>
+                                    <span>585 pixels</span>
+                                </li>
+                                <li class="flex ac">
+                                    <span class="tryDemo_ul_l-s">Height:</span>
+                                    <span>440 pixels</span>
+                                </li>
+                                <li class="flex ac">
+                                    <span class="tryDemo_ul_l-s">IsBlur:</span>
+                                    <span>False</span>
+                                </li>
+                                <li class="flex ac">
+                                    <span class="tryDemo_ul_l-s">IsLineDrawing:</span>
+                                    <span>False</span>
+                                </li>
+                                <li class="flex ac">
+                                    <span class="tryDemo_ul_l-s">Color:</span>
+                                    <span>TrueColor</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tryDemo_f200">
+                            <p class="jsonResponse"></p>
+                        </div>
+                    </div>
+                    <div class="flex jcsb box-thumb-wrapper f100">
+                        <div class="thumbnails tryDemo_left">
+                            <ul class="flex ac thumbnails_slider">
+                                <li class="thumbnails_slider-s">
+                                    <img class="thumbnails_slider-s-img" src="assets/images/sample_29.jpg" alt="img">
+                                </li>
+                                <li class="thumbnails_slider-s">
+                                    <img class="thumbnails_slider-s-img" src="assets/images/sample_29.jpg" alt="img">
+                                </li>
+                                <li class="thumbnails_slider-s">
+                                    <img class="thumbnails_slider-s-img" src="assets/images/sample_29.jpg" alt="img">
+                                </li>
+                                <li class="thumbnails_slider-s">
+                                    <img class="thumbnails_slider-s-img" src="assets/images/sample_29.jpg" alt="img">
+                                </li>
+                                <li class="thumbnails_slider-s">
+                                    <img class="thumbnails_slider-s-img" src="assets/images/sample_29.jpg" alt="img">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex ac jcsb tryDemo_right">
+                            <div class="fc fdc tryDemo_tryApi tryDemo_boxes fauto">
+                                <p class="m0 mb0_2_5 f700 small-f">Try the API</p>
+                                <p class="m0 small-f">Drag here or Browse File</p>
+                            </div>
+                            <div class="fc fdc tryDemo_eImgUrl tryDemo_boxes fauto">
+                                <input type="text" placeholder="Enter Image URL" class="mb0_5 tryDemo_eImgUrl-input">
+                                <button class="btn btn-primary tryDemo_eImgUrl-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Object Tab Content-->
+                <div class="hidden flex aifs jcsb tryDemo_obj">
+                    <div class="tryDemo_obj_l tryDemo_left">
+                        <img class="tryDemo-img" src="assets/images/download.png" alt="img">
+                    </div>
+                    <div class="flex wrap tryDemo_obj_r tryDemo_right">
+                        <input class="hidden tryDemo_tabs-subInput" id="tab3" type="radio" name="obj-k" checked="">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tc" for="tab3">Key Points</label>
+                        <input class="hidden tryDemo_tabs-subInput" id="tab4" type="radio" name="obj-k">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tc br" for="tab4">JSON Response</label>
+                        <div class="tryDemo_f100">
+                            <h6 class="mb1 f700">Confidence Score</h6>
+                            <div class="flex aic tryDemo_obj_r-range">
+                                <input type="range" class="tryDemo_obj-slider" min="54" max="100" value="70"
+                                    id="od_prob_range" style="margin-right: 1%; width: 90%;"
+                                    oninput="od_slider_change()" onchange="od_slider_change()">
+                                <label class="tryDemo_obj-slabel" for="">0.94</label>
+                            </div>
+                            <div class="flex ac jcfe">
+                                <button class="btn tryDemo_obj-btn">Clear</button>
+                                <button class="btn tryDemo_obj-btn active">Show All</button>
+                            </div>
+                            <h6 class="mb1 f700">Objects Detected</h6>
+                            <div class="flex wrap ac">
+                                <label class="switch">
+                                    <input class="hidden tryDemo_obj-input" type="checkbox"
+                                        onclick="update_image_bb_click('Table Lamp', 'od')" name="od_detected_obj"
+                                        value="Table Lamp" checked>
+                                    <span class="tryDemo_obj-check">Table Lamp</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Image Quality Tab Content-->
+                <div class="hidden flex aifs jcsb tryDemo_imgQ">
+                    <div class="tryDemo_imgQ_l tryDemo_left">
+                        <img class="tryDemo-img" src="assets/images/download.png" alt="img">
+                    </div>
+                    <div class="flex wrap tryDemo_imgQ_r tryDemo_right">
+                        <input class="hidden tryDemo_tabs-subInput" id="tab5" type="radio" name="imgQ-k" checked="">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tc" for="tab5">Key Points</label>
+                        <input class="hidden tryDemo_tabs-subInput" id="tab6" type="radio" name="imgQ-k">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tc br" for="tab6">JSON Response</label>
+                        <div class="tryDemo_f100">
+                            <ul class="tryDemo_ul">
+                                <li class="flex ac tryDemo_ul_l">
+                                    <span class="tryDemo_ul_l-s">Image Quality -</span>
+                                    <span>Average</span>
+                                </li>
+                                <li class="flex ac">
+                                    <span class="tryDemo_ul_l-s">Construction - </span>
+                                    <span>False</span>
+                                </li>
+                                <li class="flex ac">
+                                    <span class="tryDemo_ul_l-s">Blurry - </span>
+                                    <span>False</span>
+                                </li>
+                                <li class="flex ac">
+                                    <span class="tryDemo_ul_l-s">Line Drawing - </span>
+                                    <span>False</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--OCR Tab Content-->
+                <div class="hidden flex aifs jcsb tryDemo_OCR">
+                    <div class="tryDemo_OCR_l tryDemo_left">
+                        <img class="tryDemo-img" src="assets/images/download.png" alt="img">
+                    </div>
+                    <div class="flex wrap tryDemo_OCR_r tryDemo_right">
+                        <input class="hidden tryDemo_tabs-subInput" id="tab7" type="radio" name="imgQ-k" checked="">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tc" for="tab7">Key Points</label>
+                        <input class="hidden tryDemo_tabs-subInput" id="tab8" type="radio" name="imgQ-k">
+                        <label class="mb1_5 tryDemo_tabs-sublabel tc br" for="tab8">JSON Response</label>
+                        <div class="tryDemo_f100">
+                            <p class="m0 mb1 small-f"><strong>Note:</strong>OCR is an additional feature which would
+                                take extra time to process, please press the below button to run OCR on current
+                                image</p>
+                            <button class="btn btn-primary">RUN OCR</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_t">
+            <div class="container flex wrap ac jcsb">
+                <p class="mb1 footer_t-contact f100">
+                    CONTACT INFORMATION
+                </p>
+                <div class="flex aic footer_t-i">
+                    <svg class="footer_t-i-icon">
+                        <use xlink:href="assets/icons/icons.svg#address"></use>
+                    </svg>
+                    <p class="m0 footer_t-i-text">
+                        <span class="block mb0_5">11900 N , Ranch road 620</span>
+                        <span>austin tX 78750 </span>
+                    </p>
+                </div>
+                <div class="flex aic footer_t-i">
+                    <svg class="footer_t-i-icon icon-phone">
+                        <use xlink:href="assets/icons/icons.svg#phone"></use>
+                    </svg>
+                    <p class="footer_t-i-text">
+                        +1866 651 8866
+                    </p>
+                </div>
+                <div class="flex aic footer_t-i">
+                    <svg class="footer_t-i-icon">
+                        <use xlink:href="assets/icons/icons.svg#mail"></use>
+                    </svg>
+                    <p class="footer_t-i-text">
+                        inscene@thebdx.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_b">
+            <div class="container flex jcc">
+                <div class="footer_b-c-txt">
+                    ©2021 INSCENE, All Rights Reserved | Privacy Policy
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/demo.js"></script>
+
+</body>
+
+</html>

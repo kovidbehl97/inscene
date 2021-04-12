@@ -1,0 +1,253 @@
+.demo {
+    &_main {
+        padding: 3rem;
+        // min-height: calc(100vh - 245px);
+    }
+    &_container {
+        max-width: 1700px;
+    }
+    &_aside {
+        max-width: 18%;
+    }
+    &_try {
+        max-width: 80%;
+    }
+}
+/*aside */
+.aside {
+    &_ul {
+        &_l {
+            font-size: clamp(1rem, 1.2vw, 1.2rem);
+            font-weight: bold;
+            padding: 1rem;
+            border-bottom: 2px solid darkgray;
+            cursor: default;
+            position: relative;
+            &-svg {
+                position: absolute;
+                top: 16px;
+                right: 5px;
+                width: 1rem;
+                height: 1rem;
+                transform: rotate(270deg);
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        &.ddmenu {
+            display: none;
+            .aside_ul_l {
+                font-weight: normal;
+                border: none;
+                padding: 0.7rem;
+                color: $black-two;
+                cursor: pointer;
+                &:first-child {
+                    padding-top: 1.4rem;
+                }
+            }
+        }
+        &_l {
+            &.active {
+                .ddmenu {
+                    display: block;
+                }
+                .aside_ul_l-svg {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+/*try Demo*/
+.tryDemo {
+    /*common for demo section */
+    &_f100 {
+        flex-basis: 100%;
+        &.active{
+            display: block;
+        }
+        &.inactive{
+            display: none;
+        }
+    }
+    &_f200 {
+        flex-basis: 100%;
+        background-color: $Greyish;
+        display: none;
+        height: 446px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &.active{
+            display: block;
+        }
+        &.inactive{
+            display: none;
+        }
+    }
+    &_left {
+        flex: 1;
+        max-width: 51%;
+    }
+    &_oldVersion{
+        background-color: $black-four;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border-radius: 50rem;
+        &.active{
+            background-color: $primaryTheme;
+        }
+    }
+    .thumbnails {
+            &_slider {
+            overflow: hidden;
+            &-s {
+                width: calc(25% - 7.5px);
+                max-width: calc(25% - 7.5px);
+                min-width: calc(25% - 7.5px);
+                margin-right: 10px;
+                &-img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &_right {
+        flex: 1;
+        max-width: 46%;
+        .tryDemo_f100 {
+            // max-height: calc(360px - 2.4rem);
+            overflow: auto;
+        }
+    }
+    /*left image */
+    &-img {
+        box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+        width:100%;
+    }
+    /* sublabel tabs*/
+    &_tabs-sublabel {
+        flex: 1;
+        max-width: 50%;
+        min-width: 50%;
+        padding: 8px 12px;
+        color: $primaryTheme;
+        font-size: 1.2rem;
+        border: 2px solid $primaryTheme;
+        border-radius: 10px 0 0 10px;
+        cursor: pointer;
+        &.br {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+    &_tabs-subInput:checked + & {
+        &_tabs-sublabel {
+            color: $primaryThemeText;
+            background-color: $primaryTheme;
+            cursor: default;
+        }
+    }
+    &_ul {
+        &_l {
+            &-s {
+                font-size: 0.9rem;
+                font-weight: 700;
+                flex: auto;
+                max-width: 200px;
+                margin-bottom: 15px;
+                line-height: 1.2;
+            }
+        }
+    }
+    &_boxes {
+        border: 2px solid grey;
+        padding: 0.2rem 1rem;
+        max-width: 48%;
+    }
+    /* classification tabs content */
+    &_progress {
+        height: 6px;
+        width: 100%;
+        background-color: darkgray;
+        &-bar {
+            background-color: $primaryTheme;
+            height: 6px;
+        }
+    }
+    /* Object Detection */
+    &_obj {
+        &-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background: $primaryTheme;
+            transition: opacity 0.2s;
+            outline: none;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: $primaryThemeText;
+                border: 3px $purple solid;
+                cursor: pointer;
+            }
+            &::-moz-range-thumb {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: $primaryThemeText;
+                border: 3px $purple solid;
+                cursor: pointer;
+            }
+        }
+        &-slabel {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        &-btn {
+            padding: 3px 15px;
+            border-color: $primaryTheme;
+            border-radius: 25px;
+            background-color: white;
+            color: $primaryTheme;
+            margin: 10px 5px 0px;
+            &.active {
+                background-color: $primaryTheme;
+                color: $primaryThemeText;
+            }
+        }
+        &-check {
+            cursor: pointer;
+            background-color: white;
+            transition: 0.4s;
+            border: 2px solid $primaryTheme;
+            border-radius: 25px;
+            color: $primaryTheme;
+            font-size: 1rem;
+            padding: 0 10px 5px;
+            font-variant: all-petite-caps;
+            margin: 5px;
+            display: block;
+            &:first {
+                margin-left: 0;
+            }
+        }
+        &-input:checked + & {
+            &-check {
+                background-color: $primaryTheme;
+                color: $primaryThemeText;
+            }
+        }
+    }
+    /*OCR*/
+    &_OCR {
+        .btn {
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.header {
+    background-color: $primaryTheme;
+    padding: 0 1.75rem 0 3rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    &_logo {
+        max-width: 120px;
+    }
+}

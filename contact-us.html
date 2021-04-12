@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <header class="flex aic jcsb header">
+        <div class="header_logo">
+            <img class="header_logo-img" src="assets/images/Inscene-Logo.png" alt="Inscene-Logo">
+        </div>
+        <nav class="f1 header_n">
+            <ul class="flex jcfe header_n_u">
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/">Home</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/solutions">Solutions</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/demo.html">Demos</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/use-cases">Use Cases</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contactus">
+            <div class="container flex fdc aic jcsb">
+                <div class="contactus_t mb1 tc">
+                    <h4 class="mb1_5 tc contactus_t-h4">What Happens Next</h4>
+                    <p class="mb1_5 contactus_t-p">
+                        We appreciate your interest in InScene, one of our team member will connect with you within one
+                        business day to discuss further.
+                    </p>
+                    <p class="m0 contactus_t-p">
+                        We are happy to assist you in what you are looking for.
+                    </p>
+                </div>
+                <div class="flex jcsb contactus_container">
+                    <div class="contactus_l">
+                        <div class="container flex fdc ac">
+                            <h4 class="contactus_l-heading mb3">Contact Us</h4>
+                            <div class="flex aic contactus_l-i mb3">
+                                <svg class="contactus_l-i-icon">
+                                    <use xlink:href="assets/icons/icons.svg#address"></use>
+                                </svg>
+                                <p class="m0 contactus_l-i-text">
+                                    <span class="block mb0_5">11900 N , Ranch road 620</span>
+                                    <span>austin tX 78750 </span>
+                                </p>
+                            </div>
+                            <div class="flex aic contactus_l-i mb3">
+                                <svg class="contactus_l-i-icon icon-phone">
+                                    <use xlink:href="assets/icons/icons.svg#phone"></use>
+                                </svg>
+                                <p class="contactus_l-i-text">
+                                    +1866 651 8866
+                                </p>
+                            </div>
+                            <div class="flex aic contactus_l-i mb3">
+                                <svg class="contactus_l-i-icon">
+                                    <use xlink:href="assets/icons/icons.svg#mail"></use>
+                                </svg>
+                                <p class="contactus_l-i-text">
+                                    inscene@thebdx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactus_r">
+                        <form enctype="multipart/form-data" name="myForm">
+                            <label class="contactus_r-lb" for="name">Name*</label>
+                            <input class="contactus_r-in" class="contactus" type="text" id="name" name="name" required="">
+                            <label class="contactus_r-lb" for="email">Email*</label>
+                            <input class="contactus_r-in" type="text" id="email" name="email" required="">
+                            <label class="contactus_r-lb" for="contact_number">Contact Number</label>
+                            <input class="contactus_r-in" type="number" id="contact_number" name="contact_number">
+                            <label class="contactus_r-lb" for="message">Message*</label>
+                            <textarea class="contactus_r-t" id="message" name="subject" style="height:50px"></textarea>
+                            <a href="javascript: validateEmail()" class="btn contactus_r-s-btn">SUBMIT</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_b">
+            <div class="container flex jcc">
+                <div class="footer_b-c-txt">
+                    ©2020 INSCENE, All Rights Reserved | Privacy Policy
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
+   
+        
+    </script>
+    <script>
+        // let el = 0;
+        // window.onload= function(){
+        //     let element = document.querySelectorAll('.w-animate');
+        //     let viewPortHeight = window.innerHeight;
+        //     if (element.length - 1 >= el) {
+        //         let addClassPosition = element[el].offsetTop - viewPortHeight + 50;
+        //         element[el].classList.add("text-transform");
+        //         el++;
+        //     }
+        // }
+
+
+        // Wrap every letter in a span
+        // var textWrapper = document.querySelector('.ml3');
+      
+        //     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        //     anime.timeline({loop: false})
+        //     .add({
+        //         targets: '.ml3 .letter',
+        //         opacity: [0,1],
+        //         easing: "easeInOutQuad",
+        //         duration: 1000,
+        //         delay: (el, i) => 40 * (i+1)
+        //     })
+        
+        
+
+    </script>
+</body>
+
+</html>

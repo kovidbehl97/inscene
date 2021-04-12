@@ -1,0 +1,268 @@
+.purpose {
+    &-h6 {
+        font-size: clamp(1rem, 1vw, 1.1rem);
+        &-exp {
+            font-size: clamp(1.1rem, 1vw, 1.2rem);
+        }
+    }
+    &-down-arrow {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: $black-two;
+    }
+    &_exp {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(24%, 1fr));
+        grid-auto-rows: 10vw;
+        grid-gap: 5px;
+        &-i {
+            overflow: hidden;
+            padding-left: 7%;
+            border: 1px solid $primaryThemeText;
+            &:nth-child(1),
+            &:nth-child(8) {
+                background-color: $lightGreen;
+            }
+            &:nth-child(2),
+            &:nth-child(7) {
+                background-color: $lightYellow;
+            }
+            &:nth-child(3),
+            &:nth-child(6) {
+                background-color: $lightPink;
+            }
+            &:nth-child(4),
+            &:nth-child(5) {
+                background-color: $lightBlue;
+            }
+            &-h6 {
+                font-size: 1.2rem;
+            }
+            &-h5 {
+                font-size: 1.5rem;
+                font-family: Electrolize;
+            }
+            &-layer {
+                position: absolute;
+                width: 100%;
+                height: 0;
+                left: 0;
+                top: 0;
+                transition: 0.3s;
+                color: $primaryThemeText;
+                overflow: hidden;
+                padding-left: 7%;
+                font-weight: 700;
+                line-height: 1.3;
+                &-svg {
+                    position: absolute;
+                    bottom: 14%;
+                    right: 7%;
+                    width: 2rem;
+                    height: 2rem;
+                    fill: $primaryThemeText;
+                }
+            }
+            &:hover & {
+                &-layer {
+                    height: 100%;
+                    background-color: #111e6c;
+                }
+            }
+        }
+    }
+}
+.letsTalk {
+    background-color: $lightGrey;
+    padding: 2rem 0;
+    margin-top: 5px;
+    &-h6 {
+        font-size: clamp(1.1rem, 1vw, 1.2rem);
+    }
+    &-btn {
+        padding: 0.8rem 1.5rem;
+        background-color: $lightGrey;
+        border: 2px solid $primaryTheme;
+        color: $primaryTheme;
+        transition: transform 0.5s;
+        font-size: 1rem;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+.offerings {
+    &_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        &_i {
+            // border: 1px solid $Greyish;
+            border-bottom: 5px solid transparent;
+            box-shadow: 0 0 1px 1px $Greyish;
+            padding: 2rem 1rem;
+            border-radius: 5px;
+            transition: transform 0.5s, border 0.5s;
+            &:hover {
+                transform: translateY(-10px);
+                // box-shadow: 0 2px 28px 0 #ccc;
+                border-bottom: 5px solid #ff5949;
+                &.green {
+                    border-bottom: 5px solid #60d6bc;
+                }
+                &.blue {
+                    border-bottom: 5px solid #653ddf;
+                }
+            }
+            &-h5 {
+                font-size: clamp(1.5rem, 2.25vw, 1.8rem);
+            }
+            &-p {
+                font-size: clamp(1rem, 2.25vw, 1.2rem);
+                line-height: 1.4;
+            }
+            &-svg{
+                height: 80px;
+            }
+        }
+
+    }
+}
+.w-animate{
+    opacity: 0;
+}
+.text-transform {
+    animation: textTransform 1s both;
+}
+@keyframes textTransform {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+.listservices {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        li {
+            max-width: 350px;
+            padding: 25px;
+            transition: 0.3s ease-in-out;
+            border-bottom: 4px solid transparent;
+            border-radius: 20px;
+            &.active {
+                transition: 0.3s ease-in-out;
+                background-color: rgba(208, 208, 223, 0.137);
+                h3 {
+                    color: #6350d0;
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &-title {
+        font-size: clamp(1.75rem, 3vw, 1.8rem);
+        display: inline-block;
+        position: relative;
+        margin-bottom: 10px;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 0%;
+            position: absolute;
+            height: 4px;
+            top: calc(100% + 5px);
+            background: #6350d0;
+            left: 0;
+            transition: width 1s ease;
+            border-radius: 4px;
+        }
+    }
+    &-para {
+        line-height: 1.5;
+        font-size: 18px;
+        color: #666666;
+    }
+    &-left {
+        flex-basis: 30%;
+        max-width: 30%;
+        li {
+            margin-left: auto;
+            text-align: right;
+            &:first-child,&:last-child {
+                margin-right: -70px;
+            }
+        }
+    }
+    &-right {
+        flex-basis: 30%;
+        max-width: 30%;
+        li {
+            margin-right: auto;
+            &:first-child,&:last-child {
+                margin-left: -70px;
+            }
+        }
+    }
+    &-center {
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+    &-img {
+        max-width: 75%;
+        // height: 100%;
+        // max-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        overflow-y: hidden;
+        position: relative;
+        img {
+            max-width: 80%;
+            width: 100%;
+            &#scan {
+                max-width: 55%;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.scan {
+    animation: move 3s cubic-bezier(0.15, 0.44, 0.76, 0.64);
+    background-color: #6754d9;
+    content: "";
+    right: 0;
+    left: 0;
+    height: 1px;
+    width: 70%;
+    top: 0;
+    margin: 0 auto;
+    position: absolute;
+    animation-iteration-count: infinite;
+    transform: translateY(0%);
+    animation-iteration-count: infinite;
+    transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    z-index: 10;
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(470px); }
+}

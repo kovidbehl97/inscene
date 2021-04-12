@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <header class="flex aic jcsb header">
+        <div class="header_logo">
+            <img class="header_logo-img" src="assets/images/Inscene-Logo.png" alt="Inscene-Logo">
+        </div>
+        <nav class="f1 header_n">
+            <ul class="flex jcfe header_n_u">
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/">Home</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/solutions">Solutions</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/demo.html">Demos</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/use-cases">Use Cases</a>
+                </li>
+                <li class="header_n_u-l">
+                    <a class="header_n_u-l-a" href="/contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="comparison pr">
+            <div id="handle"></div>
+            <div id="divisor" class="divisor">
+                <div class="divisor-img-after">
+
+                </div>
+            </div>
+            <input class="m0 comparison-input" type="range" min="0" max="100" value="50" id="slider"
+                oninput="moveDivisor()">
+        </section>
+        <section class="spacing explore">
+            <div class="container tc">
+                <h6 class="mb0_5 w-animate">Our Purpose</h6>
+                <h2 class="mb2 w-animate">Data Science Integration in Real Esate</h2>
+                <p class="mb3 w-animate">Find the most similar house by room types, exterior object features or
+                    neighborhood.
+                    Determine real value of a property by comparing similar houses and getting automatic knowledge
+                    through
+                    image classification. Find the features which increase value of property, make better decisions and
+                    help
+                    your customers.</p>
+                <a href="" class="explore-tryDemo-link tc f700 w-animate">
+                    TRY DEMO
+                </a>
+            </div>
+        </section>
+        <section class="banner-letsTalk">
+            <div class="flex aic jcsb container">
+                <h6 class="m0">Need any of our products customized for your brand?</h4>
+                    <button class="btn btn-primary btn-radius letsTalk-btn">LET'S TALK</button>
+            </div>
+        </section>
+        <script>
+            var divisor = document.getElementById("divisor"),
+                handle = document.getElementById("handle"),
+                slider = document.getElementById("slider");
+
+            function moveDivisor() {
+                handle.style.left = slider.value + "%";
+                divisor.style.width = slider.value + "%";
+            }
+
+            window.onload = function () {
+                moveDivisor();
+            };
+        </script>
+    </main>
+    <footer class="footer">
+        <div class="footer_t">
+            <div class="container flex ac jcsb">
+                <div class="flex aic footer_t-i">
+                    <svg class="footer_t-i-icon">
+                        <use xlink:href="assets/icons/icons.svg#address"></use>
+                    </svg>
+                    <p class="m0 footer_t-i-text">
+                       <span class="block mb0_5">11900 N , Ranch road 620</span> 
+                       <span>austin tX 78750 </span> 
+                    </p>
+                </div>
+                <div class="flex aic footer_t-i">
+                    <svg class="footer_t-i-icon icon-phone">
+                        <use xlink:href="assets/icons/icons.svg#phone"></use>
+                    </svg>
+                    <p class="footer_t-i-text">
+                        +1866 651 8866
+                    </p>
+                </div>
+                <div class="flex aic footer_t-i">
+                    <svg class="footer_t-i-icon">
+                        <use xlink:href="assets/icons/icons.svg#mail"></use>
+                    </svg>
+                    <p class="footer_t-i-text">
+                        inscene@thebdx.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_b">
+            <div class="container flex jcc">
+                <div class="footer_b-c-txt">
+                    ©2020 INSCENE, All Rights Reserved | Privacy Policy
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/animation.js"></script>
+</body>
+
+</html>
